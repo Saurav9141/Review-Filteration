@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submission</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <img src="logo.png" height="120px" width="240px" class="center" alt="Logo">
+    <h2>Submit Your Review</h2>
+    <p class="intro-text">We value your feedback and would love to hear about your experience. Please take a moment to rate our service and share your thoughts with us. Your input helps us improve and provide you with the best possible experience.</p>
+
+    <div class="rating-container">
+        <label for="rating">Select Rating:</label>
+        <div class="star-rating">
+            <input type="radio" id="star5" name="star" value="5">
+            <label for="star5" title="5 stars" aria-label="5 stars">&#9733;</label>
+
+            <input type="radio" id="star4" name="star" value="4">
+            <label for="star4" title="4 stars" aria-label="4 stars">&#9733;</label>
+
+            <input type="radio" id="star3" name="star" value="3">
+            <label for="star3" title="3 stars" aria-label="3 stars">&#9733;</label>
+
+            <input type="radio" id="star2" name="star" value="2">
+            <label for="star2" title="2 stars" aria-label="2 stars">&#9733;</label>
+
+            <input type="radio" id="star1" name="star" value="1">
+            <label for="star1" title="1 star" aria-label="1 star">&#9733;</label>
+        </div>
+    </div>
+
+    <input type="hidden" id="rating" name="rating">
+
+    <div id="feedback-form" class="form-container hidden">
+        <h2>Submit Your Feedback</h2>
+        <textarea id="feedback" rows="4" cols="50" placeholder="Please provide your feedback..."></textarea><br>
+        <button onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+
+    <div id="review-form" class="form-container hidden">
+        <h2>Submit Your Review</h2>
+        <textarea id="review" rows="4" cols="50" placeholder="Please write your review..."></textarea><br>
+        <button id="submit-review-button">Submit Review</button>
+    </div>
+
+    <script src="review.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* General styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.review-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.review-button:hover {
+    background-color: #0056b3;
+}
+
+.thankyou-text {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.review-link {
+    display: block;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.review-link:hover {
+    background-color: #0056b3;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 30px auto; /* Center the paragraph and adjust margins */
+    max-width: 1000px; /* Ensure it doesn't exceed screen width */
+    text-align: center;
+}
+
+.rating-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    display: inline-flex;
+    direction: rtl;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f5b301;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f5b301;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    color: #555;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#qrcode {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .intro-text {
+        margin: 20px 20px; /* Adjust margins for tablets */
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .form-container {
+        margin: 0 20px; /* Reduce side margins on tablets */
+    }
+
+    .star-rating label {
+        font-size: 1.5em; /* Adjust star size for smaller screens */
+    }
+
+    textarea {
+        font-size: 14px; /* Adjust text area font size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text {
+        margin: 15px 10px; /* Adjust margins for mobile phones */
+        font-size: 0.9em; /* Further reduce font size for mobile phones */
+    }
+
+    .form-container {
+        margin: 0 10px; /* Reduce side margins on mobile phones */
+    }
+
+    .star-rating label {
+        font-size: 1.2em; /* Further adjust star size */
+    }
+
+    textarea {
+        font-size: 12px; /* Further adjust text area font size */
+    }
+
+    button {
+        font-size: 12px; /* Further adjust button font size */
+    }
+}
