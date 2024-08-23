@@ -83,7 +83,7 @@ body {
 }
 
 .star-rating label {
-    font-size: 2em;
+    font-size: 3em;
     color: #ccc;
     cursor: pointer;
     transition: color 0.2s ease-in-out;
