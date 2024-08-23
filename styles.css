@@ -195,26 +195,6 @@ button:hover {
     button {
         font-size: 12px; /* Further adjust button font size */
     }
-    footer {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 10px 0;
-    color: #555;
-    font-size: 14px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid #ccc;
-}
-
-footer a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 }
