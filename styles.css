@@ -213,7 +213,7 @@ button:hover {
 @media (max-width: 768px) {
     .intro-text {
         margin: 20px 20px; /* Adjust margins for tablets */
-        font-size: 3em; /* Adjust font size for smaller screens */
+        font-size: 1em; /* Adjust font size for smaller screens */
     }
 
     .form-container {
@@ -221,7 +221,7 @@ button:hover {
     }
 
     .star-rating label {
-        font-size: 1.5em; /* Adjust star size for smaller screens */
+        font-size: 3em; /* Adjust star size for smaller screens */
     }
 
     textarea {
