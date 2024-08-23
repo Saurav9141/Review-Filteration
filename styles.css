@@ -7,26 +7,63 @@ body {
     max-width: 800px;
     margin: auto;
 }
-footer {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 10px 0;
-    color: #555;
-    font-size: 14px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid #ccc;
+/* Privacy Policy Page Styles */
+.privacy-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a smooth look */
+    font-family: Arial, sans-serif;
 }
 
-footer a {
-    color: #007BFF;
+h1.privacy-title {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+h2.privacy-heading {
+    color: #007BFF; /* Primary color for subheadings */
+    margin-top: 30px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #f5b301; /* Bottom border to separate sections */
+    padding-bottom: 10px;
+}
+
+p.privacy-text, ul.privacy-list, ol.privacy-list {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+ul.privacy-list, ol.privacy-list {
+    padding-left: 20px;
+}
+
+.privacy-list li {
+    margin-bottom: 10px;
+}
+
+.privacy-container a {
+    color: #007BFF; /* Link color */
     text-decoration: none;
 }
 
-footer a:hover {
+.privacy-container a:hover {
     text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #999999;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
 }
 
 
