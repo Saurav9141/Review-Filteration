@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="feedback-form-container">
+        <form id="feedback-form" onsubmit="submitFeedback(event)">
+            <h2>Feedback Form</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit" class="review-button">Send Feedback</button>
+        </form>
+    </div>
+
+    <script>
+        function submitFeedback(event) {
+            event.preventDefault();
+            const form = document.getElementById('feedback-form');
+            const formData = new FormData(form);
+
+            fetch('send_email.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Feedback submitted successfully!');
+                form.reset(); // Reset the form after submission
+                window.location.href = 'thankyou.html'; // Redirect to thankyou.html
+            })
+            .catch(error => {
+                alert('There was an error submitting your feedback. Please try again.');
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
