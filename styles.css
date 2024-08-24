@@ -7,6 +7,7 @@ body {
     max-width: 800px;
     margin: auto;
 }
+
 /* Privacy Policy Page Styles */
 .privacy-container {
     max-width: 1000px;
@@ -66,7 +67,6 @@ footer {
     padding-top: 20px;
 }
 
-
 .button-container {
     text-align: center;
     margin-top: 20px;
@@ -120,8 +120,8 @@ footer {
     font-size: 1.1em;
     color: #555;
     line-height: 1.6;
-    margin: 30px auto; /* Center the paragraph and adjust margins */
-    max-width: 1000px; /* Ensure it doesn't exceed screen width */
+    margin: 30px auto;
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -209,49 +209,85 @@ button:hover {
     margin-top: 20px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .intro-text {
-        margin: 20px 20px; /* Adjust margins for tablets */
-        font-size: 1em; /* Adjust font size for smaller screens */
-    }
-
-    .form-container {
-        margin: 0 20px; /* Reduce side margins on tablets */
-    }
-
-    .star-rating label {
-        font-size: 3em; /* Adjust star size for smaller screens */
-    }
-
-    textarea {
-        font-size: 14px; /* Adjust text area font size */
-    }
-
-    button {
-        font-size: 14px; /* Adjust button font size */
-    }
+/* Feedback Form Container */
+.feedback-form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
 }
 
-@media (max-width: 480px) {
-    .intro-text {
-        margin: 15px 10px; /* Adjust margins for mobile phones */
-        font-size: 0.9em; /* Further reduce font size for mobile phones */
-    }
+.feedback-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
 
-    .form-container {
-        margin: 0 10px; /* Reduce side margins on mobile phones */
-    }
+.feedback-form-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1em;
+}
 
-    .star-rating label {
-        font-size: 3em; /* Further adjust star size */
-    }
+.feedback-form-container input[type="text"],
+.feedback-form-container input[type="email"],
+.feedback-form-container input[type="tel"],
+.feedback-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
 
-    textarea {
-        font-size: 12px; /* Further adjust text area font size */
-    }
+.feedback-form-container input[type="text"]:focus,
+.feedback-form-container input[type="email"]:focus,
+.feedback-form-container input[type="tel"]:focus,
+.feedback-form-container textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
 
-    button {
-        font-size: 12px; /* Further adjust button font size */
-    }
+.feedback-form-container textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.feedback-form-container button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center text in button */
+}
+
+.feedback-form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Center buttons in forms */
+.form-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-container button {
+    display: inline-block;
+    margin: 10px;
 }
