@@ -34,13 +34,6 @@ function handleRatingSubmission(rating) {
 }
 
 function submitFeedback() {
-    const feedback = document.getElementById('feedback').value;
-    if (feedback.trim() === '') {
-        alert('Please provide your feedback before submitting.');
-        return;
-    }
-
-    // Show an alert and redirect the user
-    alert('Thank you for your valuable feedback!');
-    window.location.href = 'thankyou.html'; // Redirect to thank you page
+    // Directly redirect to feedback.html without any alert
+    window.location.href = 'feedback.html'; // Redirect to feedback.html
 }
