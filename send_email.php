@@ -1,10 +1,16 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
+    // Get and sanitize form data
     $name = htmlspecialchars(trim($_POST['name']));
     $email = htmlspecialchars(trim($_POST['email']));
     $contact = htmlspecialchars(trim($_POST['contact']));
     $feedback = htmlspecialchars(trim($_POST['feedback']));
+
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
 
     // Email settings
     $to = "chatwidvinay@gmail.com"; // Replace with your email address
