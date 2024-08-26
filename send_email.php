@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email settings
-    $to = "chatwidvinay@gmail.com"; // Replace with your email address
+    $to = "sauravgaur01344@gmail.com"; // Replace with your email address
     $subject = "New Feedback from Website";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
