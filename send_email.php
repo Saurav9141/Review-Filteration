@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email settings
-    $to = "sauravgaur01344@gmail.com"; // Replace with your email address
+    $to = "chatwidvinay@gmail.com"; // Replace with your email address
     $subject = "New Feedback from Website";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -36,10 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </html>
     ";
 
-    // Send email
+    // Send email and log errors
     if (mail($to, $subject, $message, $headers)) {
         echo "Feedback submitted successfully!";
     } else {
+        // Log error to a file
+        error_log("Email sending failed for: $email", 3, "/var/log/php_mail_errors.log");
         echo "There was an error submitting your feedback. Please try again.";
     }
 } else {
